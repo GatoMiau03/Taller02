@@ -45,3 +45,33 @@ public void mostrarMenu() {
         }
     } while (opcion != 4);
 }
+
+    public static void main(String[] args) {
+        Main app = new Main();
+        app.mostrarMenu();
+    }
+    public void mostrarSismosMayoresIgualA4() {
+        for (int fila = 0; fila < dias; fila++) {
+            int contador = 0;
+
+            for (int columna = 0; columna < LECTURAS_POR_DIA; columna++) {
+                if (lecturas[fila][columna] >= 4.0) {
+                    contador++;
+                }
+            }
+
+            System.out.printf("Día %d: %d veces%n", fila + 1, contador);
+        }
+    }
+
+
+
+    lecturas = new double[dias][LECTURAS_POR_DIA];
+    random = new Random();
+
+        for (int fila = 0; fila < dias; fila++) {
+        for (int columna = 0; columna < LECTURAS_POR_DIA; columna++) {
+            lecturas[fila][columna] = 1.0 + random.nextDouble() * (9.9 - 1.0);
+        }
+    }
+}
