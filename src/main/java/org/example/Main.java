@@ -5,6 +5,62 @@ import java.util.Random;
 import java.util.Scanner;
 
 public class Main{
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 public void mostrarMenu() {
     Scanner scanner = new Scanner(System.in);
     int opcion = 0;
